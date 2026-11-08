@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#172554">
+    <meta name="description" content="Localização de produtos da Ban Ban Calçados">
+
+    <title>StockFácil | Ban Ban Calçados</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>StockFácil</h1>
+        <p>Ban Ban Calçados</p>
+    </header>
+
+    <main>
+
+        <section class="boas-vindas">
+            <h2>Bem-vindo ao StockFácil!</h2>
+            <p>Organize seu estoque e encontre produtos rapidamente.</p>
+        </section>
+
+        <section class="pesquisa">
+
+            <h2>Localizar produto</h2>
+
+            <input
+                type="text"
+                id="referencia"
+                placeholder="Digite a referência do calçado"
+            >
+
+            <button id="buscar">Pesquisar produto</button>
+
+            <div id="resultado"></div>
+
+        </section>
+<section class="lista-produtos">
+    <h2>Produtos cadastrados</h2>
+
+    <button type="button" id="listarProdutos">
+        Ver todos os produtos
+    </button>
+
+    <div id="listaProdutos"></div>
+</section>
+
+        <section class="cadastro">
+
+            <h2>Cadastrar novo produto</h2>
+
+            <form id="formCadastro">
+
+                <label for="novaReferencia">Referência do produto</label>
+                <input type="text" id="novaReferencia" required>
+
+                <label for="nomeProduto">Nome do calçado</label>
+                <input type="text" id="nomeProduto" required>
+
+                <label for="marcaProduto">Marca</label>
+                <input type="text" id="marcaProduto" required>
+
+                <label for="tamanhoProduto">Tamanho</label>
+                <input type="number" id="tamanhoProduto" min="1" required>
+
+                <h3>Endereço no estoque</h3>
+
+                <label for="ruaProduto">Rua</label>
+                <input type="text" id="ruaProduto" required>
+
+                <label for="corredorProduto">Corredor</label>
+                <input type="text" id="corredorProduto" required>
+
+                <label for="prateleiraProduto">Prateleira</label>
+                <input type="text" id="prateleiraProduto" required>
+
+                <label for="posicaoProduto">Posição</label>
+                <input type="text" id="posicaoProduto" required>
+
+                <button type="submit">Cadastrar produto</button>
+
+            </form>
+
+            <div id="mensagemCadastro"></div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
